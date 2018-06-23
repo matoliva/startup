@@ -1,0 +1,104 @@
+* {
+  font-size: 20px;
+  color: white;
+}
+
+body {
+	
+}
+
+.container {
+	width: 800px;
+	height: 510px;
+	background: #333333;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 6px;
+	border: 10px solid transparent;
+}
+
+.container .header {
+	text-align: center;
+	background: #666666;
+	border-radius: 6px;
+	display: block;
+	padding: 20px;
+}
+
+.container .nav {
+	text-align: center;
+	background: #666666;
+	border-radius: 6px;
+	float: left;
+	height: 340px;
+	width: 150px;
+	margin-top: 15px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.container .content {
+	text-align: center;
+	background: #666666;
+	border-radius: 6px;	
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 15px;
+	height: 340px;
+	width: 470px;
+	padding-top: 10px;
+}
+
+.content .hsection {
+	background: #999999;
+	border-radius: 6px;
+	text-align: center;	
+	padding: 10px;
+	margin: 10px;
+}
+
+.content .asection {
+	background: #999999;
+	border-radius: 6px;
+	text-align: center;	
+	margin: 10px;
+	padding: 83px;
+}
+
+.content .fsection {
+	background: #999999;
+	border-radius: 6px;
+	text-align: center;	
+	padding: 10px;
+	margin: 10px;
+}
+
+.container .sidebar {
+	text-align: center;
+	background: #666666;
+	border-radius: 6px;
+	float: right;
+	height: 340px;
+	width: 150px;
+	margin-top: 15px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.footer {
+	clear: both;
+	text-align: center;
+	background: #666666;
+	border-radius: 6px;
+	display: block;
+	margin-top: 15px;
+	padding: 20px;
+}
+
+
+/* example with inline vs !important*/
+
+/*
+footer.footer[style] {
+	background: yellow !important;
+}*/
