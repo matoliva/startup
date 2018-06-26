@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Javascript exercise 7</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header" class="header">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, culpa.
+        </header>
+        <nav id="nav" class="nav">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </nav>
+        <section id="section" class="section">
+            <p id="hello" >Hello world!</p> 
+            <input type="button" onclick="getAjax()" value="Joke">
+        </section>
+        <footer id="footer" class="footer">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, similique!
+        </footer>
+    </div> 
+    <script>
+        
+
+        /*let getAjax = () => {
+            return new Promise((resolve, reject)=> {
+                let xhr = new XMLHttpRequest();
+                xhr.open("GET", "http://api.icndb.com/jokes/random", 0);
+                xhr.send();
+                if(true){
+                    resolve(JSON.parse(xhr.responseText)); 
+                }
+                else
+                {
+                    reject("Something went wrong");
+                }
+            });
+        }
+
+        function printJoke()
+        {
+            getAjax()
+            .then((response)=> {
+                alert(response.value.joke);
+            })
+            .catch((err) => {
+                alert(err);
+            });
+        }*/
+
+        /*function getAjax()
+        {
+            fetch('http://api.icndb.com/jokes/random')
+                .then(function(response){
+                    response.json().then(function(data){
+                        console.log(data.value.joke);
+                    });
+                })
+                .catch(function(err){
+                    console.log("error");
+                });
+        }*/
+        
+        const ajax = (url) => {
+            return new Promise((resolve, reject) => { 
+                fetch(url)
+                    .then(response => resolve(`server status: ${response.status === 200 ? "OK" : "NOT OK"}`))
+                    .catch(() => reject(`something went wrong`));
+            });
+        }
+
+        function getAjax() {
+            ajax('http://api.icndb.com/jokes/random')
+                .then(result => console.log(result))
+                .catch(e => console.log(e));
+        }
+
+       
+
+
+    </script>
+</body>
+</html>
