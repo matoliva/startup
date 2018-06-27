@@ -26,7 +26,8 @@
         </footer>
     </div> 
     <script>
-        
+    
+
         let config  = {
             url: 'http://api.icndb.com/jokes/random',
             method: 'GET',
@@ -39,10 +40,15 @@
 
         function getAjax(config)
         {
-            fetch(config.url)
+            let section = document.getElementById('hello');
+
+            fetch(config)
                 .then(response => response.json())
-                .then(json => console.log(json.value.joke))
-                .catch(error => console.log(error));
+                .then(json => section.innerHTML = json.value.joke)
+                .catch(error => {
+                    section.innerHTML = error;
+                    section.style.background = "red";
+                });
 
         }
     </script>
