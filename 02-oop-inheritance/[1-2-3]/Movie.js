@@ -19,7 +19,7 @@ class Movie {
 }
 
 
-let shrek = new Movie("shrek", 2015, 110);
+/*let shrek = new Movie("shrek", 2015, 110);
 let swordFish = new Movie("swordFish", 2015, 110);
 let americanPie = new Movie("americanPie", 2015, 110);
 
@@ -27,4 +27,4 @@ shrek.play();
 shrek.pause();
 swordFish.play();
 swordFish.pause();
-americanPie.play();
+americanPie.play();*/
