@@ -1,3 +1,5 @@
+import EventEmmiter from "../[3]/EventEmmiter.js";
+
 
 export default class Movie extends EventEmmiter{
     constructor(title, year, duration){
