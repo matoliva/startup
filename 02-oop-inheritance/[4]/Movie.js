@@ -1,4 +1,5 @@
-class Movie extends EventEmmiter{
+
+export default class Movie extends EventEmmiter{
     constructor(title, year, duration){
         super();
         this.title = title;
