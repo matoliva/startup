@@ -1,4 +1,3 @@
-
 export default class Movie extends EventEmmiter{
     constructor(title, year, duration){
         super();
