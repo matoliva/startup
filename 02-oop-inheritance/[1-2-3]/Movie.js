@@ -3,7 +3,10 @@ class Movie {
         this.title = title;
         this. year = year;
         this.duration = duration;
+
+        super();
     }
+    
 
     play(){
         return "playing " + this.title;
