@@ -1,5 +1,5 @@
 
-export default class Logger{
+class Logger{
     constructor(){}
 
     log(info){

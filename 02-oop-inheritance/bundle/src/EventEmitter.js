@@ -1,5 +1,5 @@
 
-export default class EventEmmiter{
+class EventEmmiter{
     constructor(){
         this.events={}; //object of events
     }
