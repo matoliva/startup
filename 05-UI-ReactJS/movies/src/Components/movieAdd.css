@@ -1,0 +1,13 @@
+.movieAdd {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.buttonAdd {
+    background: white;
+    border-radius: 5px;
+    border-color: lightblue;
+    font-size: 15px;
+    color: blue;
+    margin: 5px;
+}
