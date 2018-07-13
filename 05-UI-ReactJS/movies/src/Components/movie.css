@@ -1,0 +1,31 @@
+.movie {
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.buttonRemove {
+    background: white;
+    border-radius: 5px;
+    border-color: lightcoral;
+    font-size: 15px;
+    color:red;
+    margin: 5px;
+}
+
+h3 {
+    text-align: center;
+    margin: 2px;
+}
+
+.title {
+    display: block;
+    text-align: center;
+}
+
+.check {
+    display: inline-block;
+    text-align: center;
+}
