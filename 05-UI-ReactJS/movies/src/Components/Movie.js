@@ -12,13 +12,13 @@ export const Movie = ({ value, favourite, onFavourite, onDelete }) => (
                 <input
                     type="checkbox"
                     checked={favourite}
-                    onChange={event => { onFavourite(); }}
+                    onChange={() => { onFavourite(); }}
                 />
             </p>
             
         </div>
         <button
-            onClick={event => { event.preventDefault(); onDelete(); }} className="buttonRemove"
+            onClick={() => { onDelete(); }} className="buttonRemove"
         >Remove</button>
     </div>
 );
